@@ -58,3 +58,16 @@ if c==0:
     print("Prime number")        
 else:
     print("Not a Prime number")
+
+#harshad number
+n=int(input())
+sum=0
+temp=n
+while temp != 0:
+    r=temp%10
+    sum=sum+r
+    temp=temp/10
+if n%sum==0:
+    print("Harshad number")
+else:
+    print("Not a Harshad number")
